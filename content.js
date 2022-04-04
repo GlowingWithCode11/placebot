@@ -40,7 +40,7 @@ var minInterval = 302100;
 var maxInterval = 1000000000;
 
 function update_design(cont) {
-	fetch("https://raw.githubusercontent.com/zyansheep/placebot/master/design.json", {cache: "no-store"}).then((resp) => {
+	fetch("https://raw.githubusercontent.com/GlowingWithCode11/placebot/master/design.json", {cache: "no-store"}).then((resp) => {
 		if (!resp.ok) {
 			throw new Error("HTTP error " + resp.status);
 		}
@@ -139,7 +139,7 @@ function calculate_changes(cur_array, ref_array) {
 			s += ('0' + (byte & 0xFF).toString(16)).slice(-2);
 		});
 		return s;
-	}
+	}i
 
 	var changes = []
 	for (let i = 0; i < cur_array.length; i += 4) {
